@@ -19,7 +19,7 @@ export default function Header({ className }: HeaderProps = {}) {
                 <div className="flex items-center justify-between">
                     {/* Logo */}
                     <Link
-                        href="/"
+                        href=""
                         className="flex items-center gap-2 font-bold text-xl text-foreground header-logo"
                     >
                         <Image
@@ -34,25 +34,25 @@ export default function Header({ className }: HeaderProps = {}) {
                     {/* Navigation */}
                     <nav className="hidden md:flex items-center gap-8 header-nav">
                         <Link
-                            href="/"
+                            href="#features"
                             className="text-foreground hover:text-slate-600 text-sm font-medium transition"
                         >
                             Funcionalidades
                         </Link>
                         <Link
-                            href="/about"
+                            href="#about"
                             className="text-foreground hover:text-slate-600 text-sm font-medium transition"
                         >
                             Sobre nosotros
                         </Link>
                         <Link
-                            href="/price"
+                            href="#price"
                             className="text-foreground hover:text-slate-600 text-sm font-medium transition"
                         >
                             Precios
                         </Link>
                         <Link
-                            href="/"
+                            href="#contact"
                             className="text-foreground hover:text-slate-600 text-sm font-medium transition"
                         >
                             Contacto
