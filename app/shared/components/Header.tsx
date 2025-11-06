@@ -1,5 +1,7 @@
 
+import fingest from "@/app/assets/img/fingest.jpg";
 import { cn } from "@/lib/utils";
+import Image from "next/image";
 import Link from "next/link";
 
 
@@ -20,11 +22,11 @@ export default function Header({ className }: HeaderProps = {}) {
                         href="/"
                         className="flex items-center gap-2 font-bold text-xl text-foreground header-logo"
                     >
-                        <img
-                            src="/img/fingest.jpg"
+                        <Image
+                            src={fingest}
                             alt="Logo"
-                            width="40"
-                            height="40"
+                            width={40}
+                            height={40}
                             className="w-10 h-10 object-contain rounded"
                         />
                     </Link>
