@@ -10,7 +10,7 @@ export default function DashboardLayout({
         <SidebarProvider>
             <SidebarApp />
             <main className="flex-1 p-4">
-                <SidebarTrigger />
+                <SidebarTrigger className="bg-slate-800 text-white w-10 h-10 p-2" />
                 {children}
             </main>
         </SidebarProvider>
