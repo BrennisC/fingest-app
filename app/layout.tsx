@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "FinGest - Gestiona tus finanzas personales con inteligencia",
   description: "FinGest es la solución integral para la gestión de tus finanzas personales, combinando tecnología avanzada y un equipo de expertos a tu servicio.",
-  keywords: ["finanzas", "tecnología", "gestión financiera", "inteligencia artificial"],
+  keywords: ["finanzas", "tecnología", "gestión financiera", "inteligencia artificial", "FinGest", "aplicación financiera", "análisis de gastos", "presupuesto personal", "seguimiento de gastos", "educación financiera"],
   authors: [{ name: "FinGest Team", url: "https://fingest.com" }],
   openGraph: {
     title: "FinGest - Gestiona tus finanzas personales con inteligencia",
@@ -41,7 +41,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="es">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >

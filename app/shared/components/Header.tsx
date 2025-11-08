@@ -13,7 +13,7 @@ export default function Header({ className }: HeaderProps = {}) {
 
     return (
         <header
-            className={cn("bg-white border-b border-gray-200 header", className)}
+            className={cn("sticky top-0 w-full bg-white border-b border-gray-200 header z-50", className)}
         >
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
                 <div className="flex items-center justify-between">
