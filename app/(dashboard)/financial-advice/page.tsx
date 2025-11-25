@@ -91,11 +91,10 @@ export default function FinancialAdvicePage() {
                         {categories.map((cat, i) => (
                             <button
                                 key={i}
-                                className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
-                                    i === 0
-                                        ? "bg-slate-700 text-white"
-                                        : "bg-white text-gray-700 border border-gray-200 hover:bg-gray-50"
-                                }`}
+                                className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors ${i === 0
+                                    ? "bg-slate-700 text-white"
+                                    : "bg-white text-gray-700 border border-gray-200 hover:bg-gray-50"
+                                    }`}
                             >
                                 {cat}
                             </button>

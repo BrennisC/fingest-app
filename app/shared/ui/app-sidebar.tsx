@@ -51,7 +51,7 @@ export function SidebarApp() {
     }
 
     return (
-        <Sidebar className="fixed left-0 top-0 h-full w-64 bg-slate-800">
+        <Sidebar className="fixed left-0 top-0 h-full w-64 bg-">
             <SidebarContent className="bg-slate-800 border-r border-slate-700/50">
                 <SidebarGroup className="space-y-6">
                     {/* Header con logo y título */}

@@ -1,54 +1,6 @@
+import { courses } from "@/lib/courses";
+
 export default function CoursesPage() {
-    const courses = [
-        {
-            id: 1,
-            title: "Fundamentos de Finanzas Personales",
-            description: "Aprende los conceptos básicos para gestionar tu dinero de manera efectiva",
-            progress: 65,
-            duration: "4 semanas",
-            lessons: 12,
-            completed: 8,
-            icon: "📚",
-            color: "bg-blue-100",
-            category: "Básico"
-        },
-        {
-            id: 2,
-            title: "Inversiones para Principiantes",
-            description: "Descubre cómo hacer crecer tu dinero con inversiones inteligentes",
-            progress: 30,
-            duration: "6 semanas",
-            lessons: 18,
-            completed: 5,
-            icon: "📈",
-            color: "bg-green-100",
-            category: "Intermedio"
-        },
-        {
-            id: 3,
-            title: "Planificación de Jubilación",
-            description: "Prepara tu futuro financiero con estrategias de ahorro a largo plazo",
-            progress: 0,
-            duration: "5 semanas",
-            lessons: 15,
-            completed: 0,
-            icon: "🎯",
-            color: "bg-purple-100",
-            category: "Avanzado"
-        },
-        {
-            id: 4,
-            title: "Presupuesto y Control de Gastos",
-            description: "Domina el arte de crear y mantener un presupuesto efectivo",
-            progress: 100,
-            duration: "3 semanas",
-            lessons: 10,
-            completed: 10,
-            icon: "💰",
-            color: "bg-yellow-100",
-            category: "Básico"
-        },
-    ];
 
     const completedCourses = courses.filter(c => c.progress === 100).length;
     const inProgressCourses = courses.filter(c => c.progress > 0 && c.progress < 100).length;
@@ -91,11 +43,10 @@ export default function CoursesPage() {
                         {["Todos", "En Progreso", "Completados", "Nuevos"].map((filter, i) => (
                             <button
                                 key={i}
-                                className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
-                                    i === 0
-                                        ? "bg-slate-700 text-white"
-                                        : "bg-white text-gray-700 border border-gray-200 hover:bg-gray-50"
-                                }`}
+                                className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors ${i === 0
+                                    ? "bg-slate-700 text-white"
+                                    : "bg-white text-gray-700 border border-gray-200 hover:bg-gray-50"
+                                    }`}
                             >
                                 {filter}
                             </button>
